@@ -94,9 +94,15 @@ var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "t
 console.log(sentenceArray)
 // Write a loop that builds sentenceArray into a real sentence, except every fourth word should be "MOOOOOO". Hint: look up the modulus operator.
 // Print your sentence ot the console.
+let newSentence = ""
 
 for (i = 0; i < sentenceArray.length; i++) {
-   
+//   newSentence += `${sentenceArray[i]} `
+  if ((i+1) % 4 === 0) {
+      newSentence += `moo `
+  } else {
+     newSentence += `${sentenceArray[i]} `
+  }
 }
-
+console.log(newSentence)
 // I have no idea - tommy and jordan both showed me how. can't remember 
